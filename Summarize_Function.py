@@ -5,7 +5,8 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import sent_tokenize, word_tokenize
 from heapq import nlargest
-
+import nltk
+nltk.download('punkt')
 def summarize(text):
     # Tokenize the text into sentences
     sentences = sent_tokenize(text)
